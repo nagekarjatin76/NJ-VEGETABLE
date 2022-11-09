@@ -41,6 +41,16 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+
+
+function loader(){
+  document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut(){
+  setTimeout(loader, 4000);
+}
+
 var swiper = new Swiper(".product-slider", {
     loop:true,
     spaceBetween: 20,
